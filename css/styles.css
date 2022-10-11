@@ -861,6 +861,7 @@ h1, h2, h3, h4, h5, h6, p {
     fill: var(--color-hover);
     background-image: url(../img/svg/icon\ check\ \(2\)\ \(1\).svg);
     background-size: contain;
+    background-origin: border-box;
 }
 
 .btn-box {
