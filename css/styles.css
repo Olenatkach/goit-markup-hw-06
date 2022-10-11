@@ -746,6 +746,8 @@ h1, h2, h3, h4, h5, h6, p {
     align-content: center;
     justify-content: center;
 
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .close:focus,
 .close:hover {
@@ -786,13 +788,13 @@ h1, h2, h3, h4, h5, h6, p {
 .form-label:hover .input-icon,
 .form-input:not(:placeholder-shown) {
     fill: var(--color-hover);
-    border: 2px solid var(--color-hover);
+    border: 1px solid var(--color-hover);
 }
 .form-label:focus .form-input,
 .form-label:focus .input-icon,
 .form-input:not(:placeholder-shown) {
     fill: var(--color-hover);
-    border: 2px solid var(--color-hover);
+    border: 1px solid var(--color-hover);
     
 }
 .form-input {
@@ -800,6 +802,7 @@ h1, h2, h3, h4, h5, h6, p {
     border-radius: 4px;
     cursor: pointer;
     padding: 12px 42px;
+
 }
 
 .input-icon {
@@ -820,7 +823,46 @@ h1, h2, h3, h4, h5, h6, p {
     border-radius: 4px;
     cursor: pointer;
     height: 120px;
+    margin-bottom: 20px;
 }
+.label {
+    line-height: 1.71;
+    color: var (--secondary-text-color);
+    display: inline-block;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    padding-left: 45px;
+    
+}
+.contract {
+    line-height: 1.71;
+    text-decoration-line: underline;
+    color: var (--color-hover);
+}
+
+.checkbox-icon {
+    width: 16px;
+    height: 15px;
+    position: absolute;
+    top: 4px;
+    left: 25px;
+    fill: var(--primary-text-color);
+
+    
+}
+.checkbox {
+    appearance: none;
+    --webkit-appearance: none;
+
+} 
+.checkbox:checked + .checkbox-icon {
+    background-color: var(--color-hover);
+    fill: var(--color-hover);
+    background-image: url(../img/svg/icon\ check\ \(2\)\ \(1\).svg);
+    background-size: contain;
+}
+
 .btn-box {
     display: flex;
     justify-content: center;
@@ -840,6 +882,8 @@ h1, h2, h3, h4, h5, h6, p {
     border: var(--color-hover);
     background-color: var(--color-hover);
     cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-button:focus,
 .form-button:hover {
