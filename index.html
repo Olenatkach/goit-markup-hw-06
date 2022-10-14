@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -26,12 +26,15 @@
 
                 <ul class="nav-list list">
                     <li class="nav-list-item">
-                        <a class="nav-list-item-link link current" href="index.html">Студія</a></li>
+                        <a class="nav-list-item-link link current" href="index.html">Студія</a>
+                    </li>
                     <li class="nav-list-item">
-                        <a class="nav-list-item-link link" href="portfolio.html">Портфоліо</a></li>
+                        <a class="nav-list-item-link link" href="portfolio.html">Портфоліо</a>
+                    </li>
                     <li class="nav-list-item">
-                        <a class="nav-list-item-link link" href="#контакти">Контакти</a></li>
-                    </ul>
+                        <a class="nav-list-item-link link" href="#контакти">Контакти</a>
+                    </li>
+                </ul>
             </nav>
         
             <ul class="contact-list list">
@@ -112,19 +115,19 @@
                 <ul class="servise-list list">
                     <li class="servise-item">
                         <div class="service-thumb">
-                            <img src="./img/box1.jpg" alt="photo 1" width="370"/>
+                            <img src="./img/box1.jpg" alt="photo 1" width="370">
                             <p class="servise-description">Десктопні додатки</p>
                         </div>
                     </li>
                     <li class="servise-item">
                         <div class="service-thumb">
-                            <img src="./img/box2.jpg" alt="photo 2" width="370"/>
+                            <img src="./img/box2.jpg" alt="photo 2" width="370">
                             <p class="servise-description">Мобільні додатки</p>
                         </div>
                     </li>
                     <li class="servise-item">
                         <div class="service-thumb">
-                            <img src="./img/box3.jpg" alt="photo 3" width="370"/>
+                            <img src="./img/box3.jpg" alt="photo 3" width="370">
                             <p class="servise-description">Дизайнерські рішення</p>
                         </div>
                     </li>
@@ -422,7 +425,7 @@
 
             <div class="footer-form">
                 <p class="footer-social">Підпишіться на розсилку</p>
-                <div class="footer-form-field">
+                <form class="footer-form-field">
                     <input type="email" class="footer-form-input" name="email" placeholder="Пошта">
                         </input>
                     <button type="submit" class="footer-form-button">Підписатися
@@ -430,9 +433,8 @@
                             <use href="./img/icons.svg#icon-send"></use>
                         </svg>
                     </button>
-                </div>
+                </form>
             </div>
-
 
         </footer>
 
@@ -446,44 +448,34 @@
                 </button>
 
                 <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
-                <div class="form-box">
-                    <div class="field">
-                        <div class="form-field">
-                            <label for="name" class="form-label">Ім'я
-                                <input type="text" class="form-input" name="name" placeholder=" ">
-                                    <svg class="input-icon">
-                                        <use href="./img/icons.svg#person-black-18dp"></use>
-                                    </svg>
-                                </input>
-                            </label>
-                        </div>
+                <form class="form-box">
+                    <label for="name" class="form-label">Ім'я
+                        <input type="text" class="form-input" name="name" placeholder=" ">
+                            <svg class="input-icon">
+                                <use href="./img/icons.svg#person-black-18dp"></use>
+                            </svg>
+                        </input>
+                    </label>
 
-                        <div class="form-field">
-                            <label for="tel" class="form-label">Телефон
-                                <input type="tel" class="form-input" name="tel" placeholder=" ">
-                                    <svg class="input-icon">
-                                        <use href="./img/icons.svg#phone-black-18dp"></use>
-                                    </svg>
-                                </input>
-                            </label>
-                        </div>
+                    <label for="tel" class="form-label">Телефон
+                        <input type="tel" class="form-input" name="tel" placeholder=" ">
+                            <svg class="input-icon">
+                                <use href="./img/icons.svg#phone-black-18dp"></use>
+                            </svg>
+                        </input>
+                    </label>
 
-                        <div class="form-field">
-                            <label for="email" class="form-label">Пошта
-                                <input type="email" class="form-input" name="email" placeholder=" ">
-                                    <svg class="input-icon">
-                                        <use href="./img/icons.svg#email-black-18dp"></use>
-                                    </svg>
-                                </input>
-                            </label>
-                        </div>
-
-                        <div class="form-field">
-                            <label for="comment" class="form-label">Коментар
-                                <textarea for="comment" id="comment" row="3" placeholder="Введіть текст"></textarea>
-                            </label>
-                        </div>
-                    </div>
+                    <label for="email" class="form-label">Пошта
+                        <input type="email" class="form-input" name="email" placeholder=" ">
+                            <svg class="input-icon">
+                                <use href="./img/icons.svg#email-black-18dp"></use>
+                            </svg>
+                        </input>
+                    </label>
+                    
+                    <label for="comment" class="form-label">Коментар
+                        <textarea for="comment" id="comment" row="3" placeholder="Введіть текст"></textarea>
+                    </label>
 
                     <label class="label">
                         <input class="checkbox" type="checkbox" name="check" value="chech">
@@ -493,21 +485,10 @@
                         Погоджуюся з розсилкою та приймаю <a href="#" class="contract">Умови договору</a>
                     </label>
 
-                    <!-- <label>
-                        <input type="checkbox">
-                        <svg class="input-icon">
-                            <use href="./img/icons.svg#icon-check"></use>
-                        </svg>
-                        </input>
-                        Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a>
-                    </label> -->
-
                     <div class="btn-box">
                         <button type="submit" class="form-button">Відправити</button>
                     </div>
-                    
-                </div>
-
+                </form>
             </div>
         </div>
     <script src="./js/modal.js"></script>    
